@@ -33,8 +33,7 @@ url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: ahmedsharifkhannoor
 github_username:  ahmedsharifkhannoor
 
-# Build settings
-theme: minima
+# Build settings s
 plugins:
   - jekyll-feed
 
