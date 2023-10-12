@@ -4,7 +4,7 @@ title:  "The Travel Post - You can rebuild the site in many different ways, but 
 date:   2023-10-12 17:35:09 +0600
 categories: [Health,  Travel, Life Style]
 Description: Where YEAR is a four-digit number MONTH and DAY are both two-digit numbers, and MARKUP is the file extension representing the format used in the file. After that, include the necessary front matter
-image: "/assets/images/img3.png"
+image: /assets/images/img3.png
 ---
 
 You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
