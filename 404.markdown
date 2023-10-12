@@ -1,0 +1,8 @@
+---
+layout: default
+title: 404 Error - Page Not Found
+---
+
+# 404 Error - Page Not Found
+
+The page you are looking for does not exist. Please navigate to the [home page](/CodeNinja/) or use the navigation menu to find what you're looking for.
