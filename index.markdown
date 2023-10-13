@@ -3,6 +3,12 @@ layout: default
 title: Home
 ---
 
+<div class="container">
+  <main>
+    {% include header.html %}
+  </main>
+</div>
+
 <h1 style="text-align: center">See My Latest Blog</h1>
 
 <p>Keep in mind that using a fixed height might not be the best approach for all types of content, especially if the content length varies significantly. Consider using a fixed height only when you are certain that the content inside the card will not exceed that height and that it won't lead to issues with content overflow.</p>
