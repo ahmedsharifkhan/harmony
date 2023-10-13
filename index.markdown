@@ -19,7 +19,7 @@ title: Home
     <div class="card border-info mb-3">
       <div class="card-body" style="height: 450px;"> 
       <!-- Adjust the height as needed -->
-      <img src="{{ site.url }}{{ site.baseurl }}{{ post.image | relative_url }}" class="card-img-top" style="width: 100 height: 100px;" alt="{{ post.title }}">
+      <img src="{{ post.image | relative_url }}" class="card-img-top" style="width: 100 height: 100px;" alt="{{ post.title }}">
         <h5 class="card-title">{{ post.title | strip_html | truncate: 65 }}</h5>
         <p class="card-text"><span class="badge text-bg-info">{{ post.date | date: "%B %d, %Y" }}</span></p>
         <p class="card-text">{{ post.Description | strip_html | truncate: 100 }}</p>
