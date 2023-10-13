@@ -4,7 +4,7 @@ title:  "How Algorithmic Trading Systems Work"
 date:   2023-10-12 17:35:09 +0600
 categories: [Health,  Travel, Life Style]
 Description: It is distressing to see the widening gulf between what people expect from parliament and what our parliamentarians actually deliver.
-image: "assets/images/img1.jpg"
+image: "/assets/Images/img1.jpg"
 ---
 
 In India, the popularity of online trading has helped transform the financial landscape. This has led to over 20% of all trading is now done via mobile through trading apps. In line with this, another development many traders have highlighted is the use of algorithmic trading systems to take advantage of ever-changing market opportunities. To date, algorithmic trading systems are used in up to 60% of all trading volume.
