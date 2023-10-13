@@ -4,7 +4,7 @@ title:  "Launches a web server and auto-regenerates your site when a file is upd
 date:   2023-10-12 17:35:09 +0600
 categories: [Health, Life Style]
 Description: You can rebuild the site in many different ways, but the most common way is to run
-image: "/assets/images/img3.png"
+image: "https://tds-images.thedailystar.net/sites/default/files/styles/very_big_201/public/images/2023/10/08/alarming_rate_of_preterm_births_in_bangladesh.png"
 ---
 You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
 
