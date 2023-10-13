@@ -40,10 +40,15 @@ github_username: https://www.github.com/ahmedsharifkhannoor
 youtube_username: https://www.youtube.com/channel/UCBfIS1RdIpSoS1e75LXJuxw
 
 
+# ./Gemfile
+
+
+
 # Build settings
 theme: minima
 plugins:
   - jekyll-feed
+  - jekyll-seo-tag
 
 # Exclude from processing.
 # The following items will not be processed, by default.
