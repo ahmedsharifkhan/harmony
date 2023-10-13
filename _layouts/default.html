@@ -26,7 +26,7 @@
 
   <!-- <style>
     .active {
-      background-color: #007bff; /* Change to your desired active link background color */
+      text-emphasis-color: #31D2F2; /* Change to your desired active link background color */
       color: #fff; /* Change to your desired text color */
     }
   </style> -->
@@ -42,14 +42,14 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link {% if page.url == '/' %}active{% endif %}" aria-current="page" href="{{ site.baseurl }}/">Home</a>
+            <a class="nav-link {% if page.url == '/' %}text-info{% endif %}" aria-current="page" href="{{ site.baseurl }}/"><b>Home</b></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link {% if page.url == '/about' %}active{% endif %}" href="{{ site.baseurl }}/about">About</a>
+            <a class="nav-link {% if page.url == '/about' %}text-info{% endif %}" href="{{ site.baseurl }}/about"><b>About</b></a>
           </li>
 
           <li class="nav-item">
-            <a class="nav-link {% if page.url == '/contact' %}active{% endif %}" href="{{ site.baseurl }}/contact">Contact</a>
+            <a class="nav-link {% if page.url == '/contact' %}text-info{% endif %}" href="{{ site.baseurl }}/contact"><b>Contact</b></a>
           </li>
 
           
