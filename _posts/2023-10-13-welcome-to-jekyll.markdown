@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: blog-post
 title:  "You can rebuild the site in many different ways, but the most common way is to run"
 date:   2023-10-12 17:35:09 +0600
 categories: [Travel, Life Style]

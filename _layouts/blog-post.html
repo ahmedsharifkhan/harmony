@@ -1,10 +1,263 @@
 ---
 layout: default
 ---
-<article class="blog-post">
-  <h1>{{ page.title }}</h1>
-  <p class="post-date">{{ page.date | date: "%B %d, %Y" }}</p>
-  <div class="post-content">
-    {{ content }}
+<!DOCTYPE html>
+
+<!--Main Navigation-->
+
+<!-- Navbar -->
+
+<!-- Jumbotron -->
+<div id="intro" class="p-5 text-center bg-light">
+  <h1 class="mb-0 h4">Blog Post</h1>
+</div>
+<!-- Jumbotron -->
+</header>
+<!--Main Navigation-->
+
+<!--Main layout-->
+<main class="mt-4 mb-5">
+  <div class="container">
+    <!--Grid row-->
+    <div class="row">
+      <!--Grid column-->
+      <div class="col-md-8 mb-4">
+        <!--Section: Post data-mdb-->
+        <section class="border-bottom mb-4">
+          <img src="{{ page.image }}" class="img-fluid shadow-2-strong rounded-5 mb-4" alt="{{ page.title }}" />
+
+          <div class="row align-items-center mb-4">
+            <div class="col-lg-6 text-center text-lg-start mb-3 m-lg-0">
+              <img src="https://mdbootstrap.com/img/Photos/Avatars/img (23).jpg" class="rounded-5 shadow-1-strong me-2"
+                height="35" alt="" loading="lazy" />
+              <span> Published {{ page.date | date: "%B %d, %Y" }} by</span>
+              <a href="#" class="text-dark">Anna</a>
+            </div>
+
+            <div class="col-lg-6 text-center text-lg-end">
+              <a class="btn border-info" target="_blank" style="color: #31D2F2" href="{{ site.facebook_username }}"
+                role="button"><i class="bi bi-facebook"></i></a>
+              <a class="btn border-info" target="_blank" style="color: #31D2F2" href="{{ site.twitter_username }}"
+                role="button"><i class="bi bi-twitter"></i></a>
+              <a class="btn border-info" target="_blank" target="_blank" style="color: #31D2F2"
+                href="{{ site.linkedin_username }}" role="button"><i class="bi bi-linkedin"></i></a>
+              <a class="btn border-info" target="_blank" style="color: #31D2F2" href="{{ site.instagram_username }}"
+                role="button"><i class="bi bi-instagram"></i></a>
+              <a class="btn border-info" target="_blank" style="color: #31D2F2" href="{{ site.youtube_username }}"
+                role="button"><i class="bi bi-youtube"></i></a>
+              <a class="btn border-info" target="_blank" style="color: #31D2F2" href="{{ site.github_username }}"
+                role="button"><i class="bi bi-github"></i></a>
+
+            </div>
+          </div>
+        </section>
+        <!--Section: Post data-mdb-->
+
+        <!--Section: Text-->
+        <section>
+          <h1 class="mb-0 h2">{{ page.title }}</h1>
+          <p class="fw-bold">
+            {{ content }}
+          </p>
+        </section>
+        <!--Section: Text-->
+
+        <!--Section: Share buttons-->
+        <section class="text-center border-top border-bottom py-4 mb-4">
+          <p><strong>Leave a comment:</strong></p>
+
+          <form>
+            <!-- Name input -->
+            <div class="form-outline mb-3">
+              <input type="text" id="form4Example1" class="form-control" />
+              <label class="form-label" for="form4Example1">Name</label>
+            </div>
+
+            <!-- Email input -->
+            <div class="form-outline mb-4">
+              <input type="email" id="form4Example2" class="form-control" />
+              <label class="form-label" for="form4Example2">Email address</label>
+            </div>
+
+            <!-- Message input -->
+            <div class="form-outline mb-4">
+              <textarea class="form-control" id="form4Example3" rows="4"></textarea>
+              <label class="form-label" for="form4Example3">Text</label>
+            </div>
+
+            <!-- Checkbox -->
+            <!-- <div class="form-check d-flex justify-content-center mb-4">
+                <input class="form-check-input me-2" type="checkbox" value="" id="form4Example4" checked />
+                <label class="form-check-label" for="form4Example4">
+                  Send me a copy of this comment
+                </label>
+              </div> -->
+
+            <!-- Submit button -->
+            <button type="submit" class="btn border-info btn-block mb-4">
+              Publish
+            </button>
+          </form>
+        </section>
+        <!--Section: Share buttons-->
+
+        <!--Section: Author-->
+        <section class="border-bottom mb-4 pb-4">
+          <div class="row">
+            <div class="col-3">
+              <img src="https://mdbootstrap.com/img/Photos/Avatars/img%20(23).jpg"
+                class="img-fluid shadow-1-strong rounded-5" alt="" />
+            </div>
+
+            <div class="col-9">
+              <p class="mb-2"><strong>Anna Maria Doe</strong></p>
+              <a href="" class="text-dark"><i class="fab fa-facebook-f me-1"></i></a>
+              <a href="" class="text-dark"><i class="fab fa-twitter me-1"></i></a>
+              <a href="" class="text-dark"><i class="fab fa-linkedin me-1"></i></a>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio est ab iure
+                inventore dolorum consectetur? Molestiae aperiam atque quasi consequatur aut?
+                Repellendus alias dolor ad nam, soluta distinctio quis accusantium!
+              </p>
+            </div>
+          </div>
+        </section>
+        <!--Section: Author-->
+
+        <!--Section: Comments-->
+        <section class="border-bottom mb-3">
+          <p class="text-center"><strong>Comments: 3</strong></p>
+
+          <!-- Comment -->
+          <div class="row mb-4">
+            <div class="col-2">
+              <img src="https://mdbootstrap.com/img/Photos/Avatars/img%20(24).jpg"
+                class="img-fluid shadow-1-strong rounded-5" alt="" />
+            </div>
+
+            <div class="col-10">
+              <p class="mb-2"><strong>Marta Dolores</strong></p>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio est ab iure
+                inventore dolorum consectetur? Molestiae aperiam atque quasi consequatur aut?
+                Repellendus alias dolor ad nam, soluta distinctio quis accusantium!
+              </p>
+            </div>
+          </div>
+
+          <!-- Comment -->
+          <div class="row mb-4">
+            <div class="col-2">
+              <img src="https://mdbootstrap.com/img/Photos/Avatars/img%20(25).jpg"
+                class="img-fluid shadow-1-strong rounded-5" alt="" />
+            </div>
+
+            <div class="col-10">
+              <p class="mb-2"><strong>Valeria Groove</strong></p>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio est ab iure
+                inventore dolorum consectetur? Molestiae aperiam atque quasi consequatur aut?
+                Repellendus alias dolor ad nam, soluta distinctio quis accusantium!
+              </p>
+            </div>
+          </div>
+
+          <!-- Comment -->
+          <div class="row mb-4">
+            <div class="col-2">
+              <img src="https://mdbootstrap.com/img/Photos/Avatars/img%20(26).jpg"
+                class="img-fluid shadow-1-strong rounded-5" alt="" />
+            </div>
+
+            <div class="col-10">
+              <p class="mb-2"><strong>Antonia Velez</strong></p>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio est ab iure
+                inventore dolorum consectetur? Molestiae aperiam atque quasi consequatur aut?
+                Repellendus alias dolor ad nam, soluta distinctio quis accusantium!
+              </p>
+            </div>
+          </div>
+        </section>
+        <!--Section: Comments-->
+
+        <!--Section: Reply-->
+
+        <!--Section: Reply-->
+      </div>
+      <!--Grid column-->
+
+      <!--Grid column-->
+
+      <aside class="col-md-4 mb-4">
+        <!--Section: Sidebar-->
+        <section class="sticky-top" style="top: 80px;">
+          <!--Section: Ad-->
+          <section class="text-center border-bottom pb-4 mb-4">
+            <div class="bg-image hover-overlay ripple mb-4">
+              <img
+                src="https://mdbootstrap.com/wp-content/themes/mdbootstrap4/content/en/_mdb5/standard/about/assets/mdb5-about.webp"
+                class="img-fluid" />
+              <a href="#" target="_blank">
+                <div class="mask" style="background-color: rgba(57, 192, 237, 0.2);"></div>
+              </a>
+            </div>
+            <h5>Material Design for Bootstrap 5</h5>
+
+            <p>
+              500+ components, free templates, 1-min installation, extensive tutorial, huge
+              community. MIT license - free for personal & commercial use
+            </p>
+            <a role="button" class="btn border-info" href="#"
+              target="_blank">Download for free<i class="fas fa-download ms-2"></i></a>
+          </section>
+          <!--Section: Ad-->
+
+          <!--Section: Video-->
+          <section class="text-center">
+            <h5 class="mb-4">Learn the newest Bootstrap 5</h5>
+
+            <div class="embed-responsive embed-responsive-16by9 shadow-4-strong">
+              <iframe class="embed-responsive-item rounded-3" src="https://www.youtube.com/embed/OTxz8hqdtEk"
+                allowfullscreen></iframe>
+
+              <section class="text-center">
+                <h5 class="mb-4">Share Content Any Favourite Site</h5>
+                <!-- AddToAny BEGIN -->
+                <style>
+                  .a2a_kit {
+                    text-align: center; /* Center the contents horizontally */
+                    margin: 0 auto; /* Center the container horizontally */
+                    /* Additional styles if needed */
+                  }
+                </style>
+                <div class="a2a_kit a2a_kit_size_32 a2a_default_style">
+                  <!-- <a class="a2a_dd" href="https://www.addtoany.com/share"></a> -->
+                  <a class="a2a_button_facebook"></a>
+                  <a class="a2a_button_twitter"></a>
+                  <a class="a2a_button_linkedin"></a>
+                  <a class="a2a_button_facebook_messenger"></a>
+                  <a class="a2a_button_telegram"></a>
+                  <a class="a2a_button_whatsapp"></a>
+                  <a class="a2a_button_email"></a>
+                  <a class="a2a_button_pinterest"></a>
+                  <a class="a2a_button_copy_link"></a>
+                </div>
+                <script async src="https://static.addtoany.com/menu/page.js"></script>
+              </section>
+                <!-- AddToAny END -->
+            </div>
+          </section>
+
+      </aside>
+      </section>
+      <!--Section: Video-->
+      </section>
+      <!--Section: Sidebar-->
+    </div>
+    <!--Grid column-->
   </div>
-</article>
+  <!--Grid row-->
+  </div>
+</main>
+<!--Main layout-->

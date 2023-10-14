@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: blog-post
 title:  "Don’t waste precious hours on self-praise"
 date:   2023-10-12 17:35:09 +0600
 categories: [Health,  Travel, Life Style]

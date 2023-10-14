@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: blog-post
 title:  "Step-by-Step Guide: Installing Jekyll and Hosting Your Site on GitHub Pages"
 date:   2023-10-12 17:35:09 +0600
 categories: [Code, Jekyll, github pages]

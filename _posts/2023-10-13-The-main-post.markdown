@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: blog-post
 title:  "Launches a web server and auto-regenerates your site when a file is updated"
 date:   2023-10-12 17:35:09 +0600
 categories: [Health, Life Style]
