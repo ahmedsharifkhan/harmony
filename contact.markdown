@@ -1,60 +1,71 @@
 ---
 layout: default
 title: Contact Us
+title: Contact Page
 ---
 
 Welcome to our website! We are a passionate team dedicated to providing valuable information to our readers.
 
 <p>Feel free to get in touch with us using the contact form below:</p>
 
----
-layout: default
----
+<body>
+    <form id="contact-form">
+  <div class="form-group">
+    <label for="name">Name:</label>
+    <input type="text" class="form-control" id="name" name="name" required>
+  </div>
+  <div class="form-group">
+    <label for="email">Email:</label>
+    <input type="email" class="form-control" id="email" name="email" required>
+  </div>
+  <div class="form-group">
+    <label for="message">Message:</label>
+    <textarea class="form-control" id="message" name="message" rows="5" required></textarea>
+  </div>
+  <button type="submit" class="btn border-info">Submit</button>
+</form>
+<div id="message-container"></div>
+
 
 <div class="container">
-  <h1>Contact Us</h1>
-  <form id="contact-form">
-    <div class="form-group">
-      <label for="name">Name:</label>
-      <input type="text" class="form-control" id="name" name="name" required>
-    </div>
-    <div class="form-group">
-      <label for="email">Email:</label>
-      <input type="email" class="form-control" id="email" name="email" required>
-    </div>
-    <div class="form-group">
-      <label for="message">Message:</label>
-      <textarea class="form-control" id="message" name="message" rows="5" required></textarea>
-    </div>
-    <button type="submit" class="btn border-info">Submit</button>
-  </form>
+# Contact Form Submissions
+
+{% for submission in site.contact-submissions %}
+<div class="submission">
+  <h2>{{ submission.name }}</h2>
+  <p>Email: {{ submission.email }}</p>
+  <p>Message: {{ submission.message | newline_to_br }}</p>
 </div>
+{% endfor %}
+    </div>
 
 <script>
-document.getElementById('contact-form').addEventListener('submit', function (e) {
+
+document.getElementById('contact-form').addEventListener('submit', async (e) => {
   e.preventDefault();
 
-  const name = document.getElementById('name').value;
-  const email = document.getElementById('email').value;
-  const message = document.getElementById('message').value;
+  const formData = new FormData(e.target);
 
-  const formData = { name, email, message };
-
-  fetch('/submit-contact-form', {
-    method: 'POST',
-    headers: {
-      'Content-Type': 'application/json',
-    },
-    body: JSON.stringify(formData),
-  })
-    .then(response => response.json())
-    .then(data => {
-      console.log('Form submitted:', data);
-      // Handle success or display a thank you message
-    })
-    .catch(error => {
-      console.error('Error:', error);
-      // Handle error
+  // Send a POST request to the server
+  try {
+    const response = await fetch('/submit-contact-form', {
+      method: 'POST',
+      body: formData,
     });
+
+    if (response.ok) {
+      const data = await response.json();
+      const messageContainer = document.getElementById('message-container');
+      messageContainer.textContent = data.message;
+    } else {
+      console.error('Form submission failed.');
+    }
+  } catch (error) {
+    console.error('Error:', error);
+    // Handle error
+  }
 });
-</script>
+
+
+    </script>
+</body>
