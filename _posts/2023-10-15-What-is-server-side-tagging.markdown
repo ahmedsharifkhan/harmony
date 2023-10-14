@@ -36,7 +36,7 @@ The application is packaged and distributed as a Docker image, which means it is
 
 A Tag Manager server container works together with a Tag Manager web container or the gtag.js library. The client-side libraries have mechanisms to collect data from the web browser and dispatch it to the server-side tagging environment.
 
-![image](https://developers.google.com/static/tag-platform/learn/images/how-sst-works.png)
+![What is server-side tagging?](https://developers.google.com/static/tag-platform/learn/images/how-sst-works.png){: width="100%" height="500"}
 
 
 
