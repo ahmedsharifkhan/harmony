@@ -1,10 +1,10 @@
 ---
 layout: blog-post
-title:  "The Travel Post - You can rebuild the site in many different ways, but the most common way is to run"
+title:  "What is server-side tagging?"
 date:   2023-10-12 17:35:09 +0600
 categories: [Health,  Travel, Life Style]
 Description: Where YEAR is a four-digit number MONTH and DAY are both two-digit numbers, and MARKUP is the file extension representing the format used in the file. After that, include the necessary front matter
-image: "https://github.com/ahmedsharifkhan/harmony/assets/65096534/32f86960-3ef2-4cc9-8804-43d11aaaa4d6"
+image: "https://developers.google.com/static/tag-platform/learn/images/how-sst-works.png"
 ---
 
 What is server-side tagging? 
@@ -36,7 +36,7 @@ The application is packaged and distributed as a Docker image, which means it is
 
 A Tag Manager server container works together with a Tag Manager web container or the gtag.js library. The client-side libraries have mechanisms to collect data from the web browser and dispatch it to the server-side tagging environment.
 
-![image](https://github.com/ahmedsharifkhan/harmony/assets/65096534/32f86960-3ef2-4cc9-8804-43d11aaaa4d6)
+![image](https://developers.google.com/static/tag-platform/learn/images/how-sst-works.png)
 
 
 
