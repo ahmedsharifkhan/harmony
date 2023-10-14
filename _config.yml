@@ -3,13 +3,13 @@ author: Ahmed Sharif Khan Noor
 start_year: 2023
 current_year: {{ site.time | date: "%Y" }}
 
-title: CodeNinja
-email: myemail@gmail.com
+title: Harmony
+email: Harmony@gmail.com
 number: 0123 345 6789
 address: New York, NY 10012, US
 description: >- # this means to ignore newlines until "baseurl:"
    Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.
-baseurl: "/CodeNinja" # the subpath of your site, e.g. /blog
+baseurl: "/harmony" # the subpath of your site, e.g. /blog
 url: "https://ahmedsharifkhan.github.io/" # the base hostname & protocol for your site, e.g. http://example.com
 
 permalink: /:categories/:year/:month/:day/:title
