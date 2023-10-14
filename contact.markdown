@@ -22,7 +22,7 @@ Welcome to our website! We are a passionate team dedicated to providing valuable
     <label for="message">Message:</label>
     <textarea class="form-control" id="message" name="message" rows="5" required></textarea>
   </div>
-  <button type="submit" class="btn border-info">Submit</button>
+  <button type="submit" class="btn border-info mt-1">Submit</button>
 </form>
 <div id="message-container"></div>
 

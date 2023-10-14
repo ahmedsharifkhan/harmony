@@ -1,43 +1,30 @@
 const express = require('express');
 const bodyParser = require('body-parser');
-const fs = require('fs-extra');
-const path = require('path');
-
+const fs = require('fs');
 const app = express();
-const port = process.env.PORT || 3000;
+const port = 3000;
 
-app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: true }));
 
-app.post('/submit-contact-form', (req, res) => {
-  const { name, email, message } = req.body;
-  const markdownContent = `---
-  title: Contact Form Submission
+app.post('/submit', (req, res) => {
+  // Collect the form data
+  const name = req.body.name;
+  const email = req.body.email;
+
+  // Create a Markdown string with the collected data
+  const markdownData = `---
   name: ${name}
   email: ${email}
   ---
 
-  **Name:** ${name}
+  Your message or additional content goes here.`;
 
-  **Email:** ${email}
+  // Save the data to a Markdown file
+  fs.writeFileSync('contact-submissions.markdown', markdownData, { flag: 'a' });
 
-  **Message:**
-  ${message}
-  `;
-
-  const filename = `${Date.now()}-contact.md`;
-  const filePath = path.join(__dirname, 'contact-submissions', filename);
-
-  fs.outputFile(filePath, markdownContent, (err) => {
-    if (err) {
-      console.error('Error saving contact form submission:', err);
-      res.status(500).json({ error: 'Server error' });
-    } else {
-      console.log('Contact form submission saved:', filePath);
-      res.json({ message: 'Form submitted successfully' });
-    }
-  });
+  res.send('Form submission successful');
 });
 
 app.listen(port, () => {
-  console.log(`Server is running on port ${port}`);
+  console.log(`Server is running on http://localhost:${port}`);
 });
