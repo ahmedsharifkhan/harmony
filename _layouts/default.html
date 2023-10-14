@@ -66,55 +66,12 @@
     </style>
 
 
-    
-  <!-- <nav>
-    <ul>
-      <li><a href="{{ site.baseurl }}/index.html">Home</a></li>
-      <li><a href="{{ site.baseurl }}/about.html">About</a></li>
-      <li><a href="{{ site.baseurl }}/contact.html">Contact</a></li>
-    </ul>
-  </nav> -->
   
-  <!-- Navbar -->
-
-  <!-- <style>
-    .active {
-      text-emphasis-color: #31D2F2; /* Change to your desired active link background color */
-      color: #fff; /* Change to your desired text color */
-    }
-  </style> -->
   
   <div class="container">
-  <nav class="navbar navbar-expand-lg bg-body-tertiary" style="background-color: #0989df;">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="{{ site.baseurl }}/">CodeNinja</a>
-
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link {% if page.url == '/' %}text-info{% endif %}" aria-current="page" href="{{ site.baseurl }}/"><b>Home</b></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link {% if page.url == '/about' %}text-info{% endif %}" href="{{ site.baseurl }}/about"><b>About</b></a>
-          </li>
-
-          <li class="nav-item">
-            <a class="nav-link {% if page.url == '/contact' %}text-info{% endif %}" href="{{ site.baseurl }}/contact"><b>Contact</b></a>
-          </li>
-
-          
-  
-        <!-- <form class="d-flex" role="search">
-          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-success" type="submit">Search</button>
-        </form> -->
-      </div>
-    </div>
-  </nav>
-</div>
+     <!-- Include the navbar -->
+     {% include navbar.html %}
+  </div>
 
 
 
@@ -166,14 +123,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
 });
 </script>
 
-  
-<!-- <script>
-  document.addEventListener('DOMContentLoaded', (event) => {
-      console.log('Script is running.'); // Add this line
-      const codeBlocks = document.querySelectorAll('pre code');
-      // Rest of your JavaScript code
-  });
-  </script> -->
-  
+
+
 </body>
 </html>
