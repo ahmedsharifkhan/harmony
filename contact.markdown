@@ -9,7 +9,7 @@ Welcome to our website! We are a passionate team dedicated to providing valuable
 <p>Feel free to get in touch with us using the contact form below:</p>
 
 <body>
-    <form id="contact-form">
+    <form id="contact-form" action="https://smartforms.dev/submit/652b47e60dd8ac0a53217348" method="POST">
   <div class="form-group">
     <label for="name">Name:</label>
     <input type="text" class="form-control" id="name" name="name" required>
@@ -20,7 +20,7 @@ Welcome to our website! We are a passionate team dedicated to providing valuable
   </div>
   <div class="form-group">
     <label for="message">Message:</label>
-    <textarea class="form-control" id="message" name="message" rows="5" required></textarea>
+    <textarea class="form-control" id="message" type="text" name="tel" rows="5" required></textarea>
   </div>
   <button type="submit" class="btn border-info mt-1">Submit</button>
 </form>
@@ -39,7 +39,7 @@ Welcome to our website! We are a passionate team dedicated to providing valuable
 {% endfor %}
     </div>
 
-<script>
+<!-- <script>
 
 document.getElementById('contact-form').addEventListener('submit', async (e) => {
   e.preventDefault();
@@ -67,5 +67,5 @@ document.getElementById('contact-form').addEventListener('submit', async (e) => 
 });
 
 
-    </script>
+    </script> -->
 </body>
