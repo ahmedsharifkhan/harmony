@@ -1,7 +1,7 @@
 ---
 layout: author
 
-permalink: /authors/jane_doe/
+permalink: /authors/jane
 name: Jane Doe
 bio: A passionate writer
 image: author1.jpg

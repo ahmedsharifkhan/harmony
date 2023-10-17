@@ -1,10 +1,15 @@
 module Jekyll
+  class AuthorPage < Page
+    def initialize(site, base, dir, author)
+      # Your code to generate the author page here
+    end
+  end
+
   class AuthorPageGenerator < Generator
+    safe true
+
     def generate(site)
-      authors = site.collections['authors'].docs
-      authors.each do |author|
-        site.pages << AuthorPage.new(site, site.source, 'author.html', author)
-      end
+      # Your code to generate author pages here
     end
   end
 end

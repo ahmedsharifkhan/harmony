@@ -1,27 +1,23 @@
 ---
 layout: default
+permalink: /authors/
 ---
-<!DOCTYPE html>
-<html>
-<head>
-    <title>{{ page.title }}</title>
-</head>
-<body>
-    <header>
-        <!-- Author information -->
-        <h1>{{ page.name }}</h1>
-        <p>{{ page.bio }}</p>
-        <img src="{{ page.image }}" alt="{{ page.name }}">
+<!-- Google Fonts -->
 
-        <!-- Add any other author-specific content here -->
-    </header>
 
-    <main>
-        {{ content }}
-    </main>
 
-    <footer>
-        <!-- Add footer content here if needed -->
-    </footer>
-</body>
-</html>
+<!-- <h1>All Authors</h1>
+
+<ul>
+  {% for author in site.authors %}
+    <li><a href="/authors/{{ author.username }}/">{{ author.name }}</a></li>
+  {% endfor %}
+</ul>
+
+[Visit {{ site.data.authors[page.author].name }}'s profile](/authors/{{ page.author }}/)
+ -->
+
+ <h1>{{ page.name }}</h1>
+<div class="author-content">
+    {{ content }}
+</div>

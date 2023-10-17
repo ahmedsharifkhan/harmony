@@ -7,7 +7,7 @@
 
 
 layout: author
-permalink: /authors/jone-smith
+permalink: /authors/jone
 username: jone-smith
 name: Jone Smith
 bio: A passionate writer
