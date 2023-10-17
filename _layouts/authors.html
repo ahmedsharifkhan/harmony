@@ -1,0 +1,27 @@
+---
+layout: default
+---
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{ page.title }}</title>
+</head>
+<body>
+    <header>
+        <!-- Author information -->
+        <h1>{{ page.name }}</h1>
+        <p>{{ page.bio }}</p>
+        <img src="{{ page.image }}" alt="{{ page.name }}">
+
+        <!-- Add any other author-specific content here -->
+    </header>
+
+    <main>
+        {{ content }}
+    </main>
+
+    <footer>
+        <!-- Add footer content here if needed -->
+    </footer>
+</body>
+</html>

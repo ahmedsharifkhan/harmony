@@ -1,5 +1,11 @@
 ---
 layout: blog-post
+username: ahmed-sharif-khan
+author_name: Ahmed Sharif Khan
+author_bio: Web Developer and Blogger
+author_email: jane.doe@email.com
+author_avatar: /assets/authors/jane_doe.jpg
+author_social:
 title:  "How Algorithmic Trading Systems Work"
 date:   2023-10-12 17:35:09 +0600
 categories: [Health,  Travel, Life Style]
@@ -8,6 +14,7 @@ image: "https://tds-images.thedailystar.net/sites/default/files/styles/big_202/p
 ---
 
 In India, the popularity of online trading has helped transform the financial landscape. This has led to over 20% of all trading is now done via mobile through trading apps. In line with this, another development many traders have highlighted is the use of algorithmic trading systems to take advantage of ever-changing market opportunities. To date, algorithmic trading systems are used in up to 60% of all trading volume.
+
 
 What are algorithmic trading systems?
 Algorithmic trading systems, or algo-trading for short, refers to the use of computer programs to automatically execute trades in financial markets. These trades are based on predetermined rules set by the trader. With a single program, traders are able to process large amounts of data and make trades at high speeds, which helps them take advantage of online trading opportunities. These programs are also able to react in a more timely manner and reduce any risks associated with sudden volatile dips before significant losses are incurred.

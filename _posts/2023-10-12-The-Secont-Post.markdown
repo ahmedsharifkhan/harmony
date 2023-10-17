@@ -1,5 +1,15 @@
 ---
 layout: blog-post
+
+author: author1
+
+author_name: Jane Doe
+username: jane_doe
+author_bio: Web Developer and Blogger
+author_email: jane.doe@email.com
+author_avatar: /assets/authors/jane_doe.jpg
+author_social:
+
 title:  "Go ahead and edit it and re-build the site to see your changes"
 date:   2023-10-12 17:35:09 +0600
 categories: [Travel, Life Style]

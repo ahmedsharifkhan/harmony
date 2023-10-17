@@ -1,0 +1,13 @@
+author1:
+  username: author1
+  name: Author One
+  bio: A passionate writer
+  image: author1.jpg
+
+author2:
+  username: author2
+  name: Author Two
+  bio: A creative mind
+  image: author2.jpg
+
+# Add more authors as needed

@@ -1,5 +1,11 @@
 ---
 layout: blog-post
+username: ahmed-sharif-khan
+author_name: Ahmed Sharif Khan
+author_bio: Web Developer and Blogger
+author_email: jane.doe@email.com
+author_avatar: /assets/authors/jane_doe.jpg
+author_social:
 title:  "Step-by-Step Guide: Installing Jekyll and Hosting Your Site on GitHub Pages"
 date:   2023-10-12 17:35:09 +0600
 categories: [Code, Jekyll, github pages]

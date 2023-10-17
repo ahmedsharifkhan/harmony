@@ -4,5 +4,5 @@ title: 404 Error - Page Not Found
 ---
 
 # 404 Error - Page Not Found
-
-The page you are looking for does not exist. Please navigate to the [home page](/CodeNinja/) or use the navigation menu to find what you're looking for.
+![alt text for screen readers](https://frontendshape.com/storage/canvas/images/jA3yaDqFnugGXX3scyL28qT7nkFJECXxrMBDisCx.png?ezimgfmt=ng%3Awebp%2Fngcb2%2Frs%3Adevice%2Frscb2-1 "Text to show on mouseover"){: width="100%" height="auto"}
+The page you are looking for does not exist. Please navigate to the [home page](/harmony/) or use the navigation menu to find what you're looking for.

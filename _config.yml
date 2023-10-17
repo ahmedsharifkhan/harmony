@@ -3,6 +3,7 @@ author: Ahmed Sharif Khan Noor
 start_year: 2023
 current_year: {{ site.time | date: "%Y" }}
 
+# Site settings
 title: Harmony
 email: Harmony@gmail.com
 number: 0123 345 6789
@@ -17,7 +18,7 @@ permalink: /:categories/:year/:month/:day/:title
 facebook_username: https://www.facebook.com/ahmedsharifkhannoor
 twitter_username: https://www.twitter.com/maxnoor87
 instagram_username: https://www.instagram.com/ahmedsharifkhannoor
-linkedin_username: https://www.linkedin.com/ahmedsharifkhannoor
+linkedin_username: https://www.linkedin.com/in/ahmedsharifkhannoor
 github_username: https://www.github.com/ahmedsharifkhannoor
 youtube_username: https://www.youtube.com/channel/UCBfIS1RdIpSoS1e75LXJuxw
 
@@ -29,6 +30,24 @@ defaults:
       type: "posts"
     values:
       permalink: "/blog/:title/"
+
+# Collections
+collections:
+  authors:
+    output: true
+    permalink: /authors/:path/
+
+# Modify Navigation Configuration:
+# Navigation
+header_pages:
+  - title: Home
+    url: /
+  - title: About
+    url: /about
+  - title: Contact
+    url: /contact
+  - title: Authors
+    url: /authors
 
 
 

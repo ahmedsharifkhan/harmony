@@ -1,5 +1,17 @@
 ---
 layout: blog-post
+
+author: author1
+username: author1
+name: Author One
+bio: A passionate writer.
+image: author1.jpg
+
+author_name: Ahmed Sharif Khan
+author_bio: Web Developer and Blogger
+author_email: jane.doe@email.com
+author_avatar: /assets/authors/jane_doe.jpg
+author_social:
 title:  "Jekyll has built-in support for using plugins to extend the core functionality."
 date:   2023-10-12 17:35:09 +0600
 categories: [Health,  Travel, Life Style]

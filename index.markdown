@@ -21,7 +21,15 @@ title: Home
       <!-- Adjust the height as needed -->
       <img src="{{ post.image | relative_url }}" class="card-img-top" style="width: 100 height: 100px;" alt="{{ post.title }}">
         <h5 class="card-title">{{ post.title | strip_html | truncate: 65 }}</h5>
-        <p class="card-text"><span class="badge text-bg-info">{{ post.date | date: "%B %d, %Y" }}</span></p>
+        
+  <div style="display: inline; margin-right: 10px;">
+  
+  <a href="#" style="text-decoration: none">
+        <img class="rounded-circle" src="assets/Images/favicon2.png" alt="Image" style="vertical-align: middle; width:35px;">
+        <p style="display: inline;"><span class="badge rounded-pill text-bg-info">{{ post.author_name }}</span></p>
+        </a>
+        <p style="display: inline;"><span class="badge rounded-pill text-bg-info">{{ post.date | date: "%B %d, %Y" }}</span></p>
+    </div>
         <p class="card-text">{{ post.Description | strip_html | truncate: 100 }}</p>
         <a href="{{ post.url | relative_url }}" class="btn btn-info">See The Post</a>
       </div>
