@@ -1,6 +1,9 @@
 ---
 layout: blog-post
 
+comments: ahmedsharifkhan/harmony/issues/1
+
+
 author: author1
 username: author1
 name: Author One

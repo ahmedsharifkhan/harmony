@@ -1,32 +1,7 @@
 ---
 layout: default
-title: Home
+title: Blog
 ---
-
-<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-  <div class="carousel-inner">
-    {% for post in site.posts limit:40 %}
-      <div class="carousel-item {% if forloop.first %}active{% endif %}">
-      <img src="{{ post.image }}" class="d-block w-100" alt="{{ post.title }}">
-      </div>
-    {% endfor %}
-  </div>
-  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Previous</span>
-  </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Next</span>
-  </button>
-</div>
-
-
-
-
-
-
-
 
 <h1 style="text-align: center">See My Latest Blog</h1>
 
@@ -44,7 +19,7 @@ title: Home
   <div style="display: inline; margin-right: 10px;">
   
   <a href="#" style="text-decoration: none">
-        <img class="rounded-circle" src="assets/Images/favicon2.png" alt="Image" style="vertical-align: middle; width:35px;">
+        <img class="rounded-circle" src="{{ site.baseurl }}/assets/Images/favicon2.png" alt="{{ post.author_name }}" style="vertical-align: middle; width:35px;">
         <p style="display: inline;"><span class="badge rounded-pill text-bg-info">{{ post.author_name }}</span></p>
         </a>
         <p style="display: inline;"><span class="badge rounded-pill text-bg-info">{{ post.date | date: "%B %d, %Y" }}</span></p>
