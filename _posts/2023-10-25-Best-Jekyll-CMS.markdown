@@ -30,7 +30,7 @@ I think this is so far the best offline Jekyll CMS among all. This is built by t
 
 The setup is easy. You will have to add one or two extra gems to your jekyll site. That’s all.
 
-TikTok recently organised an educational workshop in Dhaka, focusing on platform navigation and content strategy. The event drew local creators and provided an overview of TikTok's functionalities through sessions like TikTok 101. The workshop placed emphasis on networking, offering attendees the chance to connect and discuss potential collaborations.
+TikTok recently organised an educational workshop in Dhaka, focusing on platform navigation and content strategy. The event drew local creators and provided an overview of TikTok's functionalities through sessions like TikTok 101. The workshop placed emphasis on networking, offering attendees the chance to connect and discuss  collaborations.
 
 Sreeya Debnath, a local content creator, reflected on the recent workshop, "I went in sceptical, thinking it might just be the same old repetitive mantra. But what I experienced was a genuine effort from TikTok to educate and uplift. They delved into the 'whys' of content creation, which was enlightening. Knowing why 'finding your niche' is pivotal and understanding the profound connection it establishes with audiences was a game-changer for me."
 
