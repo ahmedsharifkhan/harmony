@@ -54,6 +54,7 @@ theme: minima
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
+  - jekyll-admin
 
   # This will require each of these gems automatically.
 # Exclude from processing.
