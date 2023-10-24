@@ -9,6 +9,7 @@ author_social:
 title:  "Jekyll requires blog post files to be named according to the following format:"
 date:   2023-10-12 17:35:09 +0600
 categories: [Health, Life Style]
+keywords: Health,  Travel, Life Style
 Description: You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes
 image: "https://tds-images.thedailystar.net/sites/default/files/styles/very_big_201/public/images/2023/10/03/default_loans_hit_all-time_high_in_bangladesh_0.png"
 ---

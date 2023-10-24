@@ -9,7 +9,7 @@ username: author1
 name: Author One
 bio: A passionate writer.
 image: author1.jpg
-
+keywords: Health,  Travel, Life Style
 author_name: Ahmed Sharif Khan
 author_bio: Web Developer and Blogger
 author_email: jane.doe@email.com

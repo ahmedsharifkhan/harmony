@@ -1,15 +1,22 @@
 ---
 layout: blog-post
 username: ahmed-sharif-khan
-author_name: Ahmed Sharif Khan
+author_name: Ahmed Sharif Khan Noor
 author_bio: Web Developer and Blogger
 author_email: jane.doe@email.com
 author_avatar: /assets/authors/jane_doe.jpg
-author_social:
+
+social_links:
+  twitter: https://twitter.com/maxnoor87
+  linkedin: https://www.linkedin.com/in/ahmedsharifkhannoor
+  github: https://github.com/ahmedsharifkhannoor
+  instagram: https://www.instagram.com/ahmedsharifkhannoor
+
 title:  "What is server-side tagging? Tagging is the act of adding snippets of code on a website for measurement"
 date:   2023-10-12 17:35:09 +0600
 categories: [Health,  Travel, Life Style]
-Description: The answer is no but it can greatly complement and improve the work done by client-side tags. With server-side tagging, an additional layer of control is inserted between the user and the marketing vendor. This layer allows you to control the exact composition of data that the vendors receive.
+keywords: Health,  Travel, Life Style
+description: The answer is no but it can greatly complement and improve the work done by client-side tags. With server-side tagging, an additional layer of control is inserted between the user and the marketing vendor. This layer allows you to control the exact composition of data that the vendors receive.
 image: "https://tds-images.thedailystar.net/sites/default/files/styles/big_202/public/images/2023/10/12/online_posts-9.jpg"
 ---
 

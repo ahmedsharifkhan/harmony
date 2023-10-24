@@ -1,11 +1,6 @@
 ---
 layout: default
 ---
-<!DOCTYPE html>
-
-<!--Main Navigation-->
-
-<!-- Navbar -->
 
 <!-- Jumbotron -->
 <div id="intro" class="p-5 text-center bg-light">
@@ -31,9 +26,9 @@ layout: default
               <img src="{{ site.baseurl }}/assets/Images/favicon2.png" class="rounded-5 shadow-1-strong me-2"
                 height="35" alt="{{ page.author_name }}" loading="lazy" />
               <span><b>{{ page.author_name }}</b> - {{ page.date | date: "%B %d, %Y" }}</span>
-              </div>
-              <div class="col-lg-6 text-center text-lg-end">
-              <a class="btn border-info" target="_blank" style="color: #31D2F2" href="{{ site.facebook_username }}"
+            </div>
+            <div class="col-lg-6 text-center text-lg-end">
+              <!-- <a class="btn border-info" target="_blank" style="color: #31D2F2" href="{{ site.facebook_username }}"
                 role="button"><i class="bi bi-facebook"></i></a>
               <a class="btn border-info" target="_blank" style="color: #31D2F2" href="{{ site.twitter_username }}"
                 role="button"><i class="bi bi-twitter"></i></a>
@@ -44,7 +39,18 @@ layout: default
               <a class="btn border-info" target="_blank" style="color: #31D2F2" href="{{ site.youtube_username }}"
                 role="button"><i class="bi bi-youtube"></i></a>
               <a class="btn border-info" target="_blank" style="color: #31D2F2" href="{{ site.github_username }}"
-                role="button"><i class="bi bi-github"></i></a>
+                role="button"><i class="bi bi-github"></i></a> -->
+
+
+              <div class="a2a_kit a2a_kit_size_32 a2a_default_style">
+                <a class="a2a_dd" href="https://www.addtoany.com/share"></a>
+                <a class="a2a_button_facebook"></a>
+                <a class="a2a_button_whatsapp"></a>
+                <a class="a2a_button_linkedin"></a>
+                <a class="a2a_button_telegram"></a>
+                <a class="a2a_button_x"></a>
+                <a class="a2a_button_copy_link"></a>
+              </div>
 
             </div>
           </div>
@@ -139,7 +145,7 @@ layout: default
             </div>
           </div>
         </section>
-        <!--Section: Comments-->
+         Section: Comments-->
 
           <!--Section: Reply-->
 
@@ -148,67 +154,61 @@ layout: default
       <!--Grid column-->
 
       <!--Grid column-->
+      <!-- side colum -->
 
       <aside class="col-md-4 mb-4">
-        <!--Section: Sidebar-->
-        <section class="sticky-top" style="top: 80px;">
-          <!--Section: Ad-->
-          <section class="text-center border-bottom pb-4 mb-4">
-            <div class="bg-image hover-overlay ripple mb-4">
-              <img
-                src="https://mdbootstrap.com/wp-content/themes/mdbootstrap4/content/en/_mdb5/standard/about/assets/mdb5-about.webp"
-                class="img-fluid" />
-              <a href="#" target="_blank">
-                <div class="mask" style="background-color: rgba(57, 192, 237, 0.2);"></div>
-              </a>
-            </div>
-            <h5>Material Design for Bootstrap 5</h5>
 
-            <p>
-              500+ components, free templates, 1-min installation, extensive tutorial, huge
-              community. MIT license - free for personal & commercial use
-            </p>
-            <a role="button" class="btn border-info" href="#" target="_blank">Download for free<i
-                class="fas fa-download ms-2"></i></a>
-          </section>
-          <!--Section: Ad-->
+        <div class="container">
+          <section class="sticky-top" style="top: 80px;">
+            <section class="text-center border-bottom pb-4 mb-4">
 
-          <!--Section: Video-->
-          <section class="text-center">
-            <h5 class="mb-4">Learn the newest Bootstrap 5</h5>
 
-            <div class="embed-responsive embed-responsive-16by9 shadow-4-strong">
-              <iframe class="embed-responsive-item rounded-3" src="https://www.youtube.com/embed/OTxz8hqdtEk"
-                allowfullscreen></iframe>
 
-              <section class="text-center">
-                <h5 class="mb-5 mt-4">Share Content Any Favourite Site</h5>
+              {% for post in site.posts | limit: 5 | reverse %}
+              <div class="card border-info mb-3" style="max-width: 540px;">
+                <div class="row g-0">
+                  <div class="col-md-8">
+                    <a href="{{ site.baseurl }}/{{ post.url }}" style="text-decoration: none;">
+                      <img src="{{ post.image | relative_url }}" class="img-fluid rounded-start" alt="{{ post.title }}"
+                        style="width: 100%; height: 120px;">
 
-                <!-- AddToAny BEGIN -->
-                <div class="a2a_kit a2a_kit_size_32 a2a_default_style">
-                  <a class="a2a_dd" href="https://www.addtoany.com/share"></a>
-                  <a class="a2a_button_facebook"></a>
-                  <a class="a2a_button_whatsapp"></a>
-                  <a class="a2a_button_linkedin"></a>
-                  <a class="a2a_button_telegram"></a>
-                  <a class="a2a_button_x"></a>
-                  <a class="a2a_button_copy_link"></a>
+                    </a>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="card-body">
+                      <a href="{{ site.baseurl }}/{{ post.url }}" style="text-decoration: none;">
+                        <p class="card-text">{{ post.title | truncate: 20 }}</p>
+                      </a>
+                    </div>
+                  </div>
                 </div>
-              </section>
-              <script async src="https://static.addtoany.com/menu/page.js"></script>
+              </div>
 
-            </div>
-          </section>
+              {% endfor %}
+                <Br>
+                    <h4>Categories</h4>
+                    <Br>
+                      {% for category in page.categories %}
+                    <a href="{{ post.url }}"><span class="badge text-bg-info">{{ category }}</span></a>
+                    {% endfor %}
 
+                 
+                    
+                   
+
+
+
+            </section>
+
+        </div>
       </aside>
       </section>
-      <!--Section: Video-->
+
       </section>
-      <!--Section: Sidebar-->
+
     </div>
-    <!--Grid column-->
+
   </div>
-  <!--Grid row-->
+
   </div>
 </main>
-<!--Main layout-->

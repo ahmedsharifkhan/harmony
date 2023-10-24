@@ -56,7 +56,8 @@
             Products
           </h6>
           <p>
-            <a href="#!" style="text-decoration: none;" class="text-reset">Angular</a>
+            <a class="nav-link {% if page.url == '/resume' %}text-info{% endif %}" href="{{ site.baseurl }}/resume"><b>Resume</b></a>
+            <a href="{{ site.baseurl }}/resume" style="text-decoration: none;" class="text-reset">Resume</a>
           </p>
           <p>
             <a href="#!" style="text-decoration: none;" class="text-reset">React</a>

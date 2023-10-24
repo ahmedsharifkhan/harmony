@@ -1,7 +1,6 @@
-
 author: Ahmed Sharif Khan Noor
 start_year: 2023
-current_year: {{ site.time | date: "%Y" }}
+current_year: { { site.time | date: "%Y" } }
 
 # Site settings
 title: Harmony
@@ -9,7 +8,7 @@ email: Harmony@gmail.com
 number: 0123 345 6789
 address: New York, NY 10012, US
 description: >- # this means to ignore newlines until "baseurl:"
-   Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.
+  Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.
 baseurl: "/harmony" # the subpath of your site, e.g. /blog
 url: "https://ahmedsharifkhan.github.io/" # the base hostname & protocol for your site, e.g. http://example.com
 
@@ -21,8 +20,6 @@ instagram_username: https://www.instagram.com/ahmedsharifkhannoor
 linkedin_username: https://www.linkedin.com/in/ahmedsharifkhannoor
 github_username: https://www.github.com/ahmedsharifkhan
 youtube_username: https://www.youtube.com/channel/UCBfIS1RdIpSoS1e75LXJuxw
-
-
 
 # _config.yml
 defaults:
@@ -49,9 +46,8 @@ header_pages:
     url: /about
   - title: Contact
     url: /contact
-
-
-
+  - title: Resume
+    url: /resume
 
 # Build settings
 theme: minima
@@ -59,10 +55,7 @@ plugins:
   - jekyll-feed
   - jekyll-seo-tag
 
-
-
- # This will require each of these gems automatically.
-
+  # This will require each of these gems automatically.
 # Exclude from processing.
 # The following items will not be processed, by default.
 # Any item listed under the `exclude:` key here will be automatically added to

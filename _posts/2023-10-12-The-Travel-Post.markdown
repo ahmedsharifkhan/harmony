@@ -9,6 +9,7 @@ author_social:
 title:  "The Travel Post - You can rebuild the site in many different ways, but the most common way is to run"
 date:   2023-10-12 17:35:09 +0600
 categories: [Health,  Travel, Life Style]
+keywords: Health,  Travel, Life Styles
 Description: Where YEAR is a four-digit number MONTH and DAY are both two-digit numbers, and MARKUP is the file extension representing the format used in the file. After that, include the necessary front matter
 image: "https://tds-images.thedailystar.net/sites/default/files/styles/very_big_201/public/images/2023/10/04/threat_of_a_major_quake_in_bangladesh.png"
 ---

@@ -9,6 +9,7 @@ author_social:
 title:  "Step-by-Step Guide: Installing Jekyll and Hosting Your Site on GitHub Pages"
 date:   2023-10-12 17:35:09 +0600
 categories: [Code, Jekyll, github pages]
+keywords: Health,  Travel, Life Style
 Description: Have you ever wanted to create a simple and elegant website or blog without the complexities of traditional content management systems? Jekyll is the answer
 image: "https://tds-images.thedailystar.net/sites/default/files/styles/big_202/public/images/2023/10/10/importance_of_independent_judiciary.jpg"
 ---
