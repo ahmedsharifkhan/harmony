@@ -1,0 +1,39 @@
+---
+layout: default
+title: CV
+---
+
+{% include _cv/head.html %}
+{% include _cv/scripts.html %}
+<!-- {% include _cv/header.html %} -->
+<!-- {% include _cv/education.html %}
+{% include _cv/career-profile.html %}
+{% include _cv/contact.html %}
+{% include _cv/experience.html %}
+{% include _cv/fork.html %}
+{% include _cv/languages.html %}
+{% include _cv/projects.html %}
+{% include _cv/publications.html %}
+{% include _cv/skills.html %}
+{% include _cv/volunteering.html %} -->
+
+<div class="container">
+    {% include _cv/header.html %}
+    <div class="container-block">
+      <div class="sidebar">
+        {% include _cv/contact.html %}
+        {% include _cv/languages.html %}
+        {% include _cv/education.html %}
+        {% include _cv/skills.html %}
+        {% include _cv/fork.html %}
+      </div>
+
+      <div class="main">
+        {% include _cv/career-profile.html %}
+        {% include _cv/experience.html %}
+        {% include _cv/publications.html %}
+        {% include _cv/projects.html %}
+        {% include _cv/volunteering.html %}
+      </div>
+    </div>
+  </div>
