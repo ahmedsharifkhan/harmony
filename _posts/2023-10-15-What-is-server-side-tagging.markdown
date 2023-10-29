@@ -16,7 +16,7 @@ title:  "What is server-side tagging? Tagging is the act of adding snippets of c
 date:   2023-10-12 17:35:09 +0600
 categories: [Health,  Travel, Life Style]
 keywords: Health,  Travel, Life Style
-description: The answer is no but it can greatly complement and improve the work done by client-side tags. With server-side tagging, an additional layer of control is inserted between the user and the marketing vendor. This layer allows you to control the exact composition of data that the vendors receive.
+Description: The answer is no but it can greatly complement and improve the work done by client-side tags. With server-side tagging, an additional layer of control is inserted between the user and the marketing vendor. This layer allows you to control the exact composition of data that the vendors receive.
 image: "https://tds-images.thedailystar.net/sites/default/files/styles/big_202/public/images/2023/10/12/online_posts-9.jpg"
 ---
 

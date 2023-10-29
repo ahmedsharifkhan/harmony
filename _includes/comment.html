@@ -1,0 +1,219 @@
+<button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#staticBackdrop" aria-controls="staticBackdrop">
+    Toggle static offcanvas
+  </button>
+  
+  <div class="offcanvas offcanvas-start" data-bs-backdrop="static" tabindex="-1" id="staticBackdrop" aria-labelledby="staticBackdropLabel">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title" id="staticBackdropLabel">Offcanvas</h5>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+      <div>
+        <!-- Comment form with Bootstrap styling -->
+<form id="comment-form" class="mt-4 mb-4">
+    <div class="mb-3">
+        <input type="text" id="name" class="form-control" placeholder="Your Name" required>
+    </div>
+    <div class="mb-3">
+        <input type="email" id="email" class="form-control" placeholder="Your Email">
+    </div>
+    <div class="mb-3">
+        <textarea id="comment" class="form-control" placeholder="Your Comment" required></textarea>
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+
+<!-- Comments container with Bootstrap styling -->
+<div id="comments-container" class="mt-4">
+    <!-- Comments will be displayed here -->
+</div>
+
+
+<!-- JavaScript to handle comments -->
+<script>
+    // Function to add a comment to local storage
+    function addComment(comment) {
+        const comments = JSON.parse(localStorage.getItem("comments")) || [];
+        comments.unshift(comment); // Prepend the new comment
+        localStorage.setItem("comments", JSON.stringify(comments));
+    }
+
+    // Function to display comments from local storage
+    function displayComments() {
+        const comments = JSON.parse(localStorage.getItem("comments")) || [];
+        const commentsContainer = document.getElementById("comments-container");
+
+        commentsContainer.innerHTML = "";
+
+        if (comments.length === 0) {
+            commentsContainer.innerHTML = "No comments yet.";
+        } else {
+            comments.forEach(function (comment, index) {
+                const commentDiv = document.createElement("div");
+                commentDiv.className = "comment";
+                commentDiv.innerHTML = `
+                    <strong>${comment.name}</strong><br>
+                    <em>${comment.email}</em><br>
+                    <p>${comment.commentText}</p>
+                    <button onclick="editComment(${index})">Edit</button>
+                    <button onclick="removeComment(${index})">Remove</button>
+                `;
+                commentsContainer.appendChild(commentDiv);
+            });
+        }
+    }
+
+    // Add an event listener to the form
+    document.getElementById("comment-form").addEventListener("submit", function (event) {
+        event.preventDefault();
+
+        // Get the form values
+        const name = document.getElementById("name").value;
+        const email = document.getElementById("email").value;
+        const commentText = document.getElementById("comment").value;
+
+        // Create a comment object
+        const comment = { name, email, commentText };
+
+        // Add the new comment to local storage
+        addComment(comment);
+
+        // Display the comments on the page (new comment will be at the top)
+        displayComments();
+
+        // Reset the form
+        document.getElementById("comment-form").reset();
+    });
+
+    // Function to edit a comment
+    function editComment(index) {
+        const comments = JSON.parse(localStorage.getItem("comments")) || [];
+        const editedCommentText = prompt("Edit your comment:", comments[index].commentText);
+        if (editedCommentText !== null) {
+            comments[index].commentText = editedCommentText;
+            localStorage.setItem("comments", JSON.stringify(comments));
+            displayComments();
+        }
+    }
+
+    // Function to remove a comment
+    function removeComment(index) {
+        const comments = JSON.parse(localStorage.getItem("comments")) || [];
+        const confirmDelete = confirm("Are you sure you want to remove this comment?");
+        if (confirmDelete) {
+            comments.splice(index, 1);
+            localStorage.setItem("comments", JSON.stringify(comments));
+            displayComments();
+        }
+    }
+
+    // Initial call to display existing comments
+    displayComments();
+</script>
+      </div>
+    </div>
+  </div>
+
+
+
+  <!-- Comment form with Bootstrap styling -->
+<form id="comment-form" class="mt-4 mb-4">
+    <div class="mb-3">
+        <input type="text" id="name" class="form-control" placeholder="Your Name" required>
+    </div>
+    <div class="mb-3">
+        <input type="email" id="email" class="form-control" placeholder="Your Email">
+    </div>
+    <div class="mb-3">
+        <textarea id="comment" class="form-control" placeholder="Your Comment" required></textarea>
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+
+<!-- Comments container with Bootstrap styling -->
+<div id="comments-container" class="mt-4">
+    <!-- Comments will be displayed here -->
+</div>
+
+
+<!-- JavaScript to handle comments -->
+<script>
+    // Function to add a comment to local storage
+    function addComment(comment) {
+        const comments = JSON.parse(localStorage.getItem("comments")) || [];
+        comments.unshift(comment); // Prepend the new comment
+        localStorage.setItem("comments", JSON.stringify(comments));
+    }
+
+    // Function to display comments from local storage
+    function displayComments() {
+        const comments = JSON.parse(localStorage.getItem("comments")) || [];
+        const commentsContainer = document.getElementById("comments-container");
+
+        commentsContainer.innerHTML = "";
+
+        if (comments.length === 0) {
+            commentsContainer.innerHTML = "No comments yet.";
+        } else {
+            comments.forEach(function (comment, index) {
+                const commentDiv = document.createElement("div");
+                commentDiv.className = "comment";
+                commentDiv.innerHTML = `
+                    <strong>${comment.name}</strong><br>
+                    <em>${comment.email}</em><br>
+                    <p>${comment.commentText}</p>
+                    <button onclick="editComment(${index})">Edit</button>
+                    <button onclick="removeComment(${index})">Remove</button>
+                `;
+                commentsContainer.appendChild(commentDiv);
+            });
+        }
+    }
+
+    // Add an event listener to the form
+    document.getElementById("comment-form").addEventListener("submit", function (event) {
+        event.preventDefault();
+
+        // Get the form values
+        const name = document.getElementById("name").value;
+        const email = document.getElementById("email").value;
+        const commentText = document.getElementById("comment").value;
+
+        // Create a comment object
+        const comment = { name, email, commentText };
+
+        // Add the new comment to local storage
+        addComment(comment);
+
+        // Display the comments on the page (new comment will be at the top)
+        displayComments();
+
+        // Reset the form
+        document.getElementById("comment-form").reset();
+    });
+
+    // Function to edit a comment
+    function editComment(index) {
+        const comments = JSON.parse(localStorage.getItem("comments")) || [];
+        const editedCommentText = prompt("Edit your comment:", comments[index].commentText);
+        if (editedCommentText !== null) {
+            comments[index].commentText = editedCommentText;
+            localStorage.setItem("comments", JSON.stringify(comments));
+            displayComments();
+        }
+    }
+
+    // Function to remove a comment
+    function removeComment(index) {
+        const comments = JSON.parse(localStorage.getItem("comments")) || [];
+        const confirmDelete = confirm("Are you sure you want to remove this comment?");
+        if (confirmDelete) {
+            comments.splice(index, 1);
+            localStorage.setItem("comments", JSON.stringify(comments));
+            displayComments();
+        }
+    }
+
+    // Initial call to display existing comments
+    displayComments();
+</script>
